@@ -6,10 +6,10 @@ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(reduce)return;                       // static, fully readable page
 root.classList.add('motion-ready');
 
-/* 1. Smooth, slightly "viscous" wheel scrolling (touch stays native). */
+/* 1. Viscous scroll on wheel and on touch, so a finger coast matches the desktop. */
 var lenis=null;
 if(window.Lenis){
- lenis=new window.Lenis({lerp:.075,wheelMultiplier:.9,smoothWheel:true,syncTouch:false,anchors:{offset:-84}});
+ lenis=new window.Lenis({lerp:.075,wheelMultiplier:.9,smoothWheel:true,syncTouch:true,syncTouchLerp:.06,touchMultiplier:1.05,anchors:{offset:-84}});
  window.__sonoLenis=lenis;
 }
 function clamp(v,a,b){return v<a?a:v>b?b:v}
@@ -24,7 +24,7 @@ var stepsBar=document.querySelector('.steps-progress');
 var roadmap=document.querySelector('.roadmap');
 var contactH=document.querySelector('.contact h2');
 var tabs=[].slice.call(document.querySelectorAll('.workflow-tab'));
-var pinQuery=window.matchMedia('(min-width:901px) and (min-height:740px)');
+var pinQuery=window.matchMedia('(min-width:901px) and (min-height:740px), (max-width:900px)');
 var geo={};
 function top(el){var t=0;while(el){t+=el.offsetTop;el=el.offsetParent}return t}
 function measure(){

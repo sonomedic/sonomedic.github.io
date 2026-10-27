@@ -86,6 +86,28 @@ html.steps-pinned .section-note{margin-top:var(--space-4)}
 .contact h2{transform:scale(calc(.84 + var(--c,1)*.16));opacity:calc(.25 + var(--c,1)*.75);letter-spacing:calc(-.02em - (1 - var(--c,1))*.04em);will-change:transform}
 
 /* Respect reduced motion: static, fully readable */
+/* Phone: same hold, but the probe stays centered and the sheet rises over it. */
+@media (max-width:900px){
+ .motion-ready .hero-track{height:188vh}
+ .motion-ready .hero{position:sticky;top:0;height:100svh;min-height:0;max-height:100svh;overflow:hidden;padding-top:84px;padding-bottom:10px;gap:10px;align-content:center}
+ .motion-ready .hero-visual img{max-height:min(168px,22svh)}
+ .motion-ready .hero-content{transform:translate3d(0,calc(var(--p)*-10vh),0) scale(calc(1 - var(--p)*.08));opacity:calc(1 - var(--p)*1.2);filter:blur(calc(var(--p)*8px))}
+ .motion-ready .hero-visual{transform:translate3d(0,calc(var(--p)*-8vh),0) scale(calc(1 + var(--p)*.22));opacity:calc(1 - var(--p)*.7);filter:blur(calc(var(--p)*7px))}
+ .motion-ready .about{margin-top:-48vh;border-radius:28px 28px 0 0;overflow:hidden;box-shadow:0 -28px 70px rgba(5,8,13,.36)}
+ html.steps-pinned .solution{height:280vh}
+ html.steps-pinned .steps-sticky{padding-top:96px;padding-bottom:12px;justify-content:flex-start}
+ html.steps-pinned .solution .section-heading{margin-bottom:8px}
+ html.steps-pinned .solution .section-heading h2{font-size:1.45rem}
+ html.steps-pinned .workflow{gap:8px}
+ html.steps-pinned .workflow-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}
+ html.steps-pinned .workflow-tab{min-height:0;padding:8px 4px;flex-direction:column;align-items:center;text-align:center;gap:4px}
+ html.steps-pinned .workflow-tab::after{display:none}
+ html.steps-pinned .workflow-tab strong{font-size:10px;line-height:1.25}
+ html.steps-pinned .workflow-tab .line-icon{width:34px;height:34px}
+ html.steps-pinned .workflow-panel{padding:10px}
+ html.steps-pinned .step-illustration{height:auto;max-height:min(132px,18svh)}
+ html.steps-pinned .section-note{display:none}
+}
 @media (prefers-reduced-motion:reduce){
  .hero-track{height:auto!important}.hero{position:relative!important;height:auto!important;min-height:780px!important}
  .about{margin-top:0!important;border-radius:0!important;box-shadow:none!important}
