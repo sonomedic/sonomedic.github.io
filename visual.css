@@ -5,7 +5,8 @@ img.line-icon{object-fit:cover;border-radius:22%;background:#e8ebef}
 .accent-stroke{stroke:var(--accent)}
 .hero{display:grid;grid-template-columns:.95fr 1.05fr;gap:var(--space-6);min-height:780px;max-height:none;padding:150px var(--gutter) 120px;text-align:left}
 .hero-content{align-items:flex-start;position:relative;z-index:1}
-.hero h1{font-size:clamp(3.6rem,6.5vw,6.5rem);margin-bottom:var(--space-6)}
+.hero h1{font-size:clamp(3.6rem,6.5vw,6.5rem);margin-bottom:var(--space-4)}
+.hero-slogan{margin:0 0 var(--space-5);font-size:clamp(1.15rem,2vw,1.5rem);font-weight:600;letter-spacing:.02em;line-height:1.45;color:#ffb5a4;text-wrap:balance}
 .hero-subtitle{font-size:var(--text-lg);letter-spacing:.08em}
 .hero-description{font-size:var(--text-base);margin-bottom:var(--space-8)}
 .hero-visual{align-self:center;min-width:0}.hero-visual img{width:100%;height:auto;max-height:550px;object-fit:contain}
@@ -44,3 +45,5 @@ img.line-icon{object-fit:cover;border-radius:22%;background:#e8ebef}
 @media(max-width:600px){.hero{padding-top:118px;gap:var(--space-3)}.hero-visual img{max-height:285px}.hero-visual figcaption{font-size:11px;letter-spacing:.06em}.hero .eyebrow{font-size:11px}.hero-subtitle{font-size:1.15rem}.hero-description{font-size:var(--text-sm)}.about-visual{min-height:300px}.visual-values{margin-top:var(--space-5);padding-top:var(--space-6)}.visual-values .line-icon{width:44px;height:44px}.visual-values strong{font-size:var(--text-xs)}.workflow-tabs{grid-template-columns:1fr 1fr;gap:var(--space-3)}.workflow-tab{min-height:147px;padding:var(--space-6) var(--space-3) var(--space-4)}.workflow-tab::after{display:none}.workflow-tab .line-icon{width:52px;height:52px}.workflow-tab strong{font-size:var(--text-sm)}.workflow-tab .step-number{display:block!important;margin:0;font-size:var(--text-xs)}.workflow-panel{grid-template-columns:1fr;gap:0;padding:var(--space-5);min-height:0}.step-illustration{height:190px;width:100%;object-fit:contain}.step-copy{padding:var(--space-4) var(--space-2) var(--space-5)}.step-copy h3{font-size:var(--text-xl)}.technical-note{margin-top:var(--space-3)}.roadmap article,.roadmap article+article{padding-left:90px;min-height:200px}.roadmap-icon{position:absolute;left:0;top:var(--space-8);width:60px;height:60px}.roadmap h3{font-size:var(--text-lg)}.roadmap-tag{margin-top:var(--space-4)}.team-list article{padding-left:104px;min-height:148px}.team-photo{position:absolute;left:0;top:var(--space-8);width:80px;height:80px;margin-bottom:0}.partner-icon{width:64px;height:64px;margin-bottom:var(--space-5)}.partnership-grid article,.partnership-grid article:first-child,.partnership-grid article:last-child{padding:var(--space-8) 0}.contact h2{font-size:var(--text-xl)}.team-list{grid-template-columns:1fr}}
 html[lang=zh-Hant] .name-en,html[lang=en] .name-zh{display:none}
 html[lang=en] .team-list h3{letter-spacing:0;line-height:1.2}
+html[lang=en] .hero-slogan{letter-spacing:0}
+@media(max-width:600px){.hero-slogan{font-size:1.05rem;margin-bottom:var(--space-4)}}
