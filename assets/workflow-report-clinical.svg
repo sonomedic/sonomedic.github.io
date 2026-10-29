@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Populated structured ultrasound report</title>
+  <desc id="desc">A hospital reporting interface shows an ultrasound image, completed structured fields, findings and a draft status ready for physician review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f7f8fa"/>
+      <stop offset="1" stop-color="#dce3e9"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#263a50"/>
+      <stop offset="1" stop-color="#101a28"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#17283d" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" rx="46" fill="url(#bg)"/>
+
+  <!-- Hospital desktop app -->
+  <g filter="url(#shadow)">
+    <rect x="88" y="74" width="1424" height="752" rx="36" fill="#fff" stroke="#b9c5cf" stroke-width="7"/>
+  </g>
+  <path d="M124 74h1352c20 0 36 16 36 36v67H88v-67c0-20 16-36 36-36Z" fill="#17283d"/>
+  <circle cx="145" cy="126" r="13" fill="#e34a30"/>
+  <circle cx="184" cy="126" r="13" fill="#ffb5a4"/>
+  <circle cx="223" cy="126" r="13" fill="#8194a5"/>
+  <rect x="274" y="109" width="239" height="32" rx="16" fill="#40556a"/>
+  <rect x="1249" y="106" width="208" height="39" rx="19" fill="#e34a30"/>
+  <circle cx="1280" cy="126" r="10" fill="#fff"/>
+  <rect x="1303" y="117" width="119" height="18" rx="9" fill="#fff" opacity=".92"/>
+
+  <!-- Patient context sidebar -->
+  <rect x="88" y="177" width="286" height="649" fill="#eef2f5"/>
+  <circle cx="231" cy="249" r="54" fill="#d3dde5"/>
+  <path d="M157 377c0-50 33-82 74-82s74 32 74 82" fill="#c2cfda"/>
+  <rect x="138" y="407" width="188" height="21" rx="10" fill="#25394e"/>
+  <rect x="138" y="450" width="131" height="15" rx="7" fill="#8fa1b1"/>
+  <rect x="138" y="484" width="164" height="15" rx="7" fill="#8fa1b1"/>
+  <path d="M120 539h222" stroke="#c4cfd8" stroke-width="3"/>
+  <rect x="138" y="573" width="105" height="17" rx="8" fill="#51687c"/>
+  <rect x="138" y="613" width="168" height="13" rx="6" fill="#9cadbb"/>
+  <rect x="138" y="646" width="144" height="13" rx="6" fill="#9cadbb"/>
+  <rect x="138" y="679" width="184" height="13" rx="6" fill="#9cadbb"/>
+  <rect x="138" y="736" width="175" height="47" rx="14" fill="#fff" stroke="#c2ced8" stroke-width="3"/>
+  <circle cx="169" cy="759" r="11" fill="#e34a30"/>
+  <path d="m163 759 5 6 10-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Filled report header -->
+  <rect x="418" y="211" width="1029" height="74" rx="18" fill="#f3f6f8"/>
+  <rect x="452" y="234" width="253" height="25" rx="12" fill="#25394e"/>
+  <rect x="1133" y="228" width="278" height="39" rx="19" fill="#fde4de"/>
+  <circle cx="1162" cy="247" r="11" fill="#e34a30"/>
+  <rect x="1187" y="237" width="183" height="19" rx="9" fill="#e34a30" opacity=".75"/>
+
+  <!-- Ultrasound evidence card -->
+  <rect x="418" y="317" width="409" height="282" rx="20" fill="url(#screen)"/>
+  <path d="M448 548c46-145 128-207 232-162 52 23 87 78 119 151" fill="none" stroke="#d5dee5" stroke-width="8" opacity=".75"/>
+  <path d="M456 558c66-98 142-122 226-70 53 33 78 49 110 53" fill="none" stroke="#93a5b4" stroke-width="8"/>
+  <path d="M505 506c52-66 111-78 174-35 44 30 72 47 100 51" fill="none" stroke="#ff9f88" stroke-width="7"/>
+  <circle cx="552" cy="470" r="8" fill="#fff" stroke="#e34a30" stroke-width="5"/>
+  <circle cx="734" cy="510" r="8" fill="#fff" stroke="#e34a30" stroke-width="5"/>
+  <path d="m552 470 182 40" stroke="#ffb5a4" stroke-width="4"/>
+  <rect x="452" y="339" width="136" height="34" rx="17" fill="#e34a30"/>
+  <rect x="475" y="349" width="91" height="14" rx="7" fill="#fff"/>
+
+  <!-- Structured fields: visibly populated, not blank paper -->
+  <rect x="859" y="317" width="588" height="282" rx="20" fill="#fff" stroke="#c4d0d9" stroke-width="3"/>
+  <rect x="893" y="347" width="159" height="20" rx="10" fill="#263a50"/>
+  <rect x="893" y="390" width="234" height="55" rx="14" fill="#eef2f5"/>
+  <circle cx="923" cy="417" r="12" fill="#e34a30"/>
+  <path d="m917 417 5 6 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="951" y="407" width="143" height="19" rx="9" fill="#657b8e"/>
+  <rect x="1152" y="390" width="261" height="55" rx="14" fill="#eef2f5"/>
+  <rect x="1180" y="407" width="183" height="19" rx="9" fill="#657b8e"/>
+  <rect x="893" y="466" width="520" height="105" rx="14" fill="#f6f8fa"/>
+  <rect x="919" y="490" width="414" height="14" rx="7" fill="#7f93a4"/>
+  <rect x="919" y="519" width="366" height="14" rx="7" fill="#9cadbb"/>
+  <rect x="919" y="548" width="241" height="14" rx="7" fill="#9cadbb"/>
+  <path d="m1369 541 15 15 29-34" fill="none" stroke="#e34a30" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Findings and impression -->
+  <rect x="418" y="631" width="1029" height="151" rx="20" fill="#f7f9fa" stroke="#c4d0d9" stroke-width="3"/>
+  <rect x="452" y="661" width="170" height="20" rx="10" fill="#263a50"/>
+  <rect x="452" y="704" width="772" height="14" rx="7" fill="#8295a5"/>
+  <rect x="452" y="737" width="648" height="14" rx="7" fill="#a2b1bd"/>
+  <rect x="1253" y="683" width="158" height="62" rx="18" fill="#e34a30"/>
+  <path d="m1281 714 13 13 31-37" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1341" y="705" width="42" height="18" rx="9" fill="#fff" opacity=".9"/>
+</svg>
